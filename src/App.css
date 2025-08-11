@@ -12,3 +12,7 @@ a{
 section{
     padding: 100px 10px;
 }
+h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}

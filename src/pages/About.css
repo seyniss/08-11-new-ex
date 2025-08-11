@@ -1,0 +1,15 @@
+.about_list ul li{
+    display:flex;
+    height:40px;
+    align-items: center;
+    gap:10px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+    transition: .3s;
+    padding:5px;
+}
+.about_list ul li:hover{
+    background-color: #d3d3d3;
+    font-weight: bold;
+}
