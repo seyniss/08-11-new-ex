@@ -14,11 +14,12 @@ footer * {
 
 .sns-list {
     display: flex;
-    gap: 5px;
+    gap: 15px;
 }
 
 .snslist li {
     margin: 10px 0;
+    padding-left:5px;
 }
 
 .sns-list li a {
@@ -26,6 +27,7 @@ footer * {
     align-items: center;
     text-decoration: none;
     color: inherit;
+    
 }
 
 .sns-list li img {
