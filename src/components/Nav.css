@@ -1,18 +1,42 @@
-nav{
+/* 네비게이션 전체 컨테이너 */
+nav {
     display: flex;
     justify-content: space-between;
-    padding:20px 10px;
-    border-bottom:1px solid #eee;
+    align-items: center;           /* 수직 정렬 */
+    padding: 1.25rem 0.625rem;     /* 20px 10px */
+    border-bottom: 1px solid #eee;
+    background-color: #fff;        /* 배경 명시 (선택사항) */
+    font-family: sans-serif;       /* 폰트 통일 */
 }
-.nav-list{
+
+/* 네비게이션 항목 목록 */
+.nav-list {
     display: flex;
-    gap :20px;
+    gap: 1.25rem;                  /* 20px */
+    list-style: none;              /* 불릿 제거 */
+    margin: 0;
+    padding: 0;
 }
-.nav-list li a{
-    display:block;
-    background:#eee;
+
+/* 각 링크 스타일 */
+.nav-list li a {
+    display: block;
+    padding: 0.5rem 0.75rem;       /* 내부 여백 추가 */
+    text-decoration: none;         /* 밑줄 제거 */
+    color: #333;                   /* 기본 글자색 */
+    background: #eee;
+    border-radius: 4px;            /* 모서리 둥글게 */
+    transition: background 0.3s, color 0.3s;
 }
-.nav-list li a.active{
-    color:#f00;
+
+/* 호버 시 효과 */
+.nav-list li a:hover {
+    background: #ddd;
+}
+
+/* 현재 활성화된 메뉴 */
+.nav-list li a.active {
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    background: #9d65f074;           /* 강조 배경색 추가 */
 }
