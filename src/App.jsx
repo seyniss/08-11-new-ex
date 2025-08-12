@@ -6,6 +6,7 @@ import Board from './pages/Board'
 import BoardDetail from './pages/BoardDetail'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/board/:id' element={<BoardDetail />} />
         <Route path='*' element={<NotFound />} /> {/* 404 처리 */}
       </Routes>
+      <Footer />
     </div>
   )
 }
